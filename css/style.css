@@ -34,7 +34,6 @@ main{
     background-color: var(--color-tc-sidebar-bg);
     background-image: url(../img/sidebar-bg.png);
     height: 100%;
-    display: flex;
     color: var(--color-tc-primary-color-bg);
 }
 #main{
