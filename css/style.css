@@ -29,6 +29,9 @@ main{
 #content{
     padding-top: 60px;
 }
+#content-side{
+    height: 99%;
+}
 #sidebar{
     width: 180px;
     background-color: var(--color-tc-sidebar-bg);
