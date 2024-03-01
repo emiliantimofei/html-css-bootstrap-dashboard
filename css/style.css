@@ -57,3 +57,12 @@ main{
 #bot i{
     color: var(--color-tc-bell-color);
 }
+#bold{
+    font-weight: bold;
+}
+th:first-of-type{
+    font-weight: normal;
+}
+.table > :not() > tr > th{
+    display: none;
+}
