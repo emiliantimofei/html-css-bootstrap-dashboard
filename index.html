@@ -24,12 +24,14 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo" class="d-sm-block d-none"><img src="img/mobile-logo.png" alt="mobile-logo" class="d-sm-none" id="logo-s"></a>
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <div class="btn-group dropstart d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-circle-question"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="d-none d-md-block flex-row">
+                            <i class="fa-solid fa-list"></i>
+                            <i class="fa-solid fa-circle-question"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                         <button id="bot" type="button" class="btn" data-bs-toggle="dropdown">
                             <i class="fa-solid fa-bell"></i>
                         </button>
@@ -38,7 +40,7 @@
                             <li><i class="fa-solid fa-circle-question"></i></li>
                             <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -73,71 +75,140 @@
                                                         <tr>
                                                             <th scope="col" id="bold" class="w-50">Nome</th>
                                                             <th scope="col" class="w3">Data Inizio</th>
-                                                            <th scope="col" class="w3">ROI</th>
+                                                            <th scope="col" class="w3 d-none d-sm-table-cell">ROI</th>
                                                             <th scope="col" class="w3">Stato</th>
                                                             <th scope="col" class="w3">Azioni</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <th>Emilian</th>
+                                                            <th><img class="tc-img" src="img/class-avatar.jpg" alt="avatar">Emilian</th>
                                                             <td>18/08/1996</td>
-                                                            <td>20%</td>
-                                                            <td>Romania</td>
-                                                            <td>Tante</td>
+                                                            <td class="d-none d-sm-table-cell">20%</td>
+                                                            <td><span class="badge text-bg-success">Success</span>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <th>Emilian</th>
+                                                            <th><img class="tc-img" src="img/class-avatar.jpg" alt="avatar">Emilian</th>
                                                             <td>18/08/1996</td>
-                                                            <td>20%</td>
-                                                            <td>Romania</td>
-                                                            <td>Tante</td>
+                                                            <td class="d-none d-sm-table-cell">20%</td>
+                                                            <td><span class="badge text-bg-success">Success</span>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <th>Emilian</th>
+                                                            <th><img class="tc-img" src="img/class-avatar.jpg" alt="avatar">Emilian</th>
                                                             <td>18/08/1996</td>
-                                                            <td>20%</td>
-                                                            <td>Romania</td>
-                                                            <td>Tante</td>
+                                                            <td class="d-none d-sm-table-cell">20%</td>
+                                                            <td><span class="badge text-bg-warning"><div id="white-on-orange">Warning</div></span>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <th>Emilian</th>
+                                                            <th><img class="tc-img" src="img/class-avatar.jpg" alt="avatar">Emilian</th>
                                                             <td>18/08/1996</td>
-                                                            <td>20%</td>
-                                                            <td>Romania</td>
-                                                            <td>Tante</td>
+                                                            <td class="d-none d-sm-table-cell">20%</td>
+                                                            <td><span class="badge text-bg-success">Success</span>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <th>Emilian</th>
+                                                            <th><img class="tc-img" src="img/class-avatar.jpg" alt="avatar">Emilian</th>
                                                             <td>18/08/1996</td>
-                                                            <td>20%</td>
-                                                            <td>Romania</td>
-                                                            <td>Tante</td>
+                                                            <td class="d-none d-sm-table-cell">20%</td>
+                                                            <td><span class="badge text-bg-danger">Danger</span>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <th>Emilian</th>
+                                                            <th><img class="tc-img" src="img/class-avatar.jpg" alt="avatar">Emilian</th>
                                                             <td>18/08/1996</td>
-                                                            <td>20%</td>
-                                                            <td>Romania</td>
-                                                            <td>Tante</td>
+                                                            <td class="d-none d-sm-table-cell">20%</td>
+                                                            <td><span class="badge text-bg-success">Success</span>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <th>Emilian</th>
+                                                            <th><img class="tc-img" src="img/class-avatar.jpg" alt="avatar">Emilian</th>
                                                             <td>18/08/1996</td>
-                                                            <td>20%</td>
-                                                            <td>Romania</td>
-                                                            <td>Tante</td>
+                                                            <td class="d-none d-sm-table-cell">20%</td>
+                                                            <td><span class="badge text-bg-danger">Danger</span>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <th>Emilian</th>
+                                                            <th><img class="tc-img" src="img/class-avatar.jpg" alt="avatar">Emilian</th>
                                                             <td>18/08/1996</td>
-                                                            <td>20%</td>
-                                                            <td>Romania</td>
-                                                            <td>Tante</td>
+                                                            <td class="d-none d-sm-table-cell">20%</td>
+                                                            <td><span class="badge text-bg-success">Success</span>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                                <button type="button" class="btn btn-outline-secondary">.</button>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">F.A.Q.</h5>
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                      Accordion Item #1
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                      Accordion Item #2
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                      Accordion Item #3
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                         </div>
                                     </div>
                                 </div>
@@ -161,27 +232,6 @@
                                               </ul>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col-lg-7 pt-4">
-                                    <div class="card mb-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title">F.A.Q.</h5>
-                                            <div class="form-floating">
-                                                <select class="form-select" id="floatingSelect"
-                                                    aria-label="Floating label select example">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                                <label for="floatingSelect">Works with selects</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-5 pt-4">
                                     <div class="card mb-3">
                                         <div class="card-body">
                                             <div class="card">

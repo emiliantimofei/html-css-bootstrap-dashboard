@@ -63,6 +63,13 @@ main{
 th:first-of-type{
     font-weight: normal;
 }
-.table > :not() > tr > th{
-    display: none;
+.tc-img{
+    max-width: 30px;
+    margin-right: 4px;
+}
+#white-on-orange{
+    color: var(--color-tc-primary-color-bg);
+}
+#logo-s{
+    width: 50px;
 }
