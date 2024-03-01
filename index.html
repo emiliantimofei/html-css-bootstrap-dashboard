@@ -59,26 +59,51 @@
                     </div>
                 </div>
                 <div id="main">
-                    <div id="nav-main" class="d-flex flex-column">
-                        <div class="nuovo-studente">
-                            <span>Nuovo studente</span>
-                        </div>
-                        <div class="boolean">
+                    <div id="nav-main" class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row-reverse flex-xl-row-reverse flex-xxl-row-reverse justify-content-end">
+                        <div id="one-m" class="nuovo-studente d-flex flex-row align-items-center justify-content-end">
                             <div>
-                                <h1>Boolean</h1>
-                                <!-- piano Blaze -->
+                                <span>Nuovo studente</span>
                             </div>
-                            <div>
-                                <!-- 3 app -->
+                            <div class="margin">
+                                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                  <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    ...
+                                  </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="studenti">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                            <h2>125</h2>
+                        <div class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row justify-content-between " id="two-m">
+                            <div class="boolean">
+                                <div class="d-flex flex-row align-items-center">
+                                    <h1>Boolean</h1>
+                                    <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center">
+                                    <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <i class="fa-solid fa-plus mx-2"></i>
+                                    <div id="minus" class="d-none d-sm-none d-md-none d-lg-block">
+                                        <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+                                        <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+                                        <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="studenti">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                                <h2>125</h2>
+                            </div>
                         </div>
                     </div>
+
                     <div class="main-main">
                         <div class="container-fluid">
                             <div class="row">
