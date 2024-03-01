@@ -50,6 +50,7 @@ main{
     height: auto;
     padding: 30px;
     background-color: var(--color-tc-nav-bar-bg);
+    color: var(--color-tc-primary-color-bg);
 }
 #bot{
     border: none;
@@ -72,4 +73,7 @@ th:first-of-type{
 }
 #logo-s{
     width: 50px;
+}
+#search-w{
+    width: 60%;
 }
