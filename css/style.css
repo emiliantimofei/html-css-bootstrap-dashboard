@@ -89,6 +89,13 @@ th:first-of-type{
 .p-1:hover{
     background-color: grey;
 }
+#offcanvas-tc{
+    width: 60%;
+}
+.tc-txt-bg{
+    background-color: rgb(0, 55, 255);
+    color: var(--color-tc-primary-color-bg);
+}
 @media screen and (min-with: 576px){
     #minus{
         display: none;
